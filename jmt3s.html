@@ -1,0 +1,667 @@
+
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<a-scene>
+<a-sky src="https://scontent.fphs1-1.fna.fbcdn.net/v/t1.0-9/96947132_2601945236738548_2486421013638676480_o.jpg?_nc_cat=105&_nc_sid=730e14&_nc_ohc=FElTX1lnTGMAX_TgZL2&_nc_ht=scontent.fphs1-1.fna&oh=98088ad23080c10124b70a9f9f63ebc0&oe=5EE5AC57" color="#acf"></a-sky>
+<a-camera position="0 -10 15" wasd-controls="acceleration: 10000"></a-camera>
+<!--outside-->
+  <a-entity position="-20 0 0">
+    <!--around-->
+      <!--floor-->
+      <a-plane position="0 -33 -100" color="#40423e" width="360" height="360"rotation="-90 180 -360"></a-plane>
+      <!--wall-->
+      <a-box position="-50 -26 -18" rotation="180 90 0" scale="19 4 7" width="0.5" height="3.5" color="#f9271f"></a-box>
+      <a-box position="-50 -26 -80" rotation="180 90 0" scale="19 4 2" width="7" height="3" color="hsl(2, 100%, 66%)"></a-box>
+      <a-box position="-50 -32 -80" rotation="90 90 0" scale="19 4 0.5" width="7" height="0.75" color="white"></a-box>
+      <a-box position="-50 -33 -18" rotation="90 90 0" scale="19 4 0.5" width="0.55" height="2" color="white"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#f9271f"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#fa433d"></a-box>
+      <a-box position="-45.75 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-54.25 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -23.2" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -12.8" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+  </a-entity>
+ <!--กำแพงขวา-->
+  <a-entity position="120 0 0" rotation="0 0 0" >
+    <!--around-->
+      <!--wall-->
+      <a-box position="-50 -26 -18" rotation="180 90 0" scale="19 4 7" width="0.5" height="3.5" color="#f9271f"></a-box>
+      <a-box position="-50 -26 -80" rotation="180 90 0" scale="19 4 2" width="7" height="3" color="hsl(2, 100%, 66%)"></a-box>
+      <a-box position="-50 -32 -80" rotation="90 90 0" scale="19 4 0.5" width="7" height="0.75" color="white"></a-box>
+      <a-box position="-50 -33 -18" rotation="90 90 0" scale="19 4 0.5" width="0.55" height="2" color="white"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#f9271f"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#fa433d"></a-box>
+      <a-box position="-45.75 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-54.25 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -23.2" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -23.2" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -12.8" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+  </a-entity>
+<!--เสากำแพงหลังซ้าย-->
+  <a-entity position = "-20 0 -130">
+      <a-box position="-50 -26 -18" rotation="180 90 0" scale="19 4 7" width="0.5" height="3.5" color="#f9271f"></a-box>
+      <a-box position="-50 -33 -18" rotation="90 90 0" scale="19 4 0.5" width="0.55" height="2" color="white"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#fa433d"></a-box>
+      <a-box position="-45.75 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-54.25 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -23.2" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -12.8" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+  </a-entity>
+
+<!--เสากำแพงหลังขวา-->
+  <a-entity position = "120 0 -130">
+      <a-box position="-50 -26 -18" rotation="180 90 0" scale="19 4 7" width="0.5" height="3.5" color="#f9271f"></a-box>
+      <a-box position="-50 -33 -18" rotation="90 90 0" scale="19 4 0.5" width="0.55" height="2" color="white"></a-box>
+      <a-box position="-50 -19 -18" rotation="180 90 0" scale="19 4 8" width="0.55" height="0.5" color="#fa433d"></a-box>
+      <a-box position="-45.75 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-54.25 -18 -18" rotation="180 90 0" scale="19 4 1" width="0.6" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -23.2" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+      <a-box position="-50 -18 -12.8" rotation="0 0 0" scale="19 4 1" width="0.4" height="0.25" color="#f9271f"></a-box>
+  </a-entity>
+<!--กำแพงหลัง-->
+  <a-entity position="0 0 -148">
+      <a-box position="0 -26 0" rotation="0 0 0" scale="19 4 2" width="7" height="3" color="hsl(2, 100%, 66%)"></a-box>
+      <a-box position="0 -32 0" rotation="90 0 0" scale="19 4 0.5" width="7" height="0.75" color="white"></a-box>
+  </a-entity>
+
+<!--ต้นไม้ซ้าย-->
+  <a-entity position="0 -1 0">
+      <a-box position="-85 -32 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="4" color="hsl(93, 95%, 25%)"></a-box>
+      <a-box position="-77.5 -31.75 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="0.25" color="white"></a-box>
+      <a-box position="-92.5 -31.75 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="0.25" color="white"></a-box>
+      <a-box position="-85 -31.75 -13.6" rotation="90 0 0" scale="19 4 0.5" width="0.75" height="0.25" color="white"></a-box>
+      <a-box position="-85 -31.75 -150.41" rotation="90 0 0" scale="19 4 0.5" width="0.75" height="0.25" color="white"></a-box>
+      <a-cylinder position="-85 -17.5 -25" radius="2" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-80 2 -25" radius="12.5" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-77 0 -25" radius="8" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+   
+    <a-entity position="27.5 0 -195" rotation="0 90 0">
+      <a-cylinder position="-85 -17.5 -25" radius="2d" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-82 0 -25" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+    </a-entity>
+   <!--ต้นเล็ก-->
+    <a-entity position="87.5 0 2">
+      <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -15 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นเล็ก-->
+    <a-entity position="87.5 0 -60">
+      <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -15 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นกลาง-->
+    <a-entity position="87.5 0 -25">
+      <a-cylinder position="-85 -17.5 -25" radius="1.5" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -11 -25" radius="10" color="#3b5026"  roughness=".4"></a-sphere>
+      <a-sphere position="-85 -3 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+  </a-entity>
+
+<!--ต้นไม้ขวา-->
+  <a-entity position="170 -1 0">
+      <a-box position="-85 -32 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="4" color="hsl(93, 95%, 25%)"></a-box>
+      <a-box position="-77.5 -31.75 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="0.25" color="white"></a-box>
+      <a-box position="-92.5 -31.75 -82" rotation="90 90 0" scale="19 4 0.5" width="7.25" height="0.25" color="white"></a-box>
+      <a-box position="-85 -31.75 -13.6" rotation="90 0 0" scale="19 4 0.5" width="0.75" height="0.25" color="white"></a-box>
+      <a-box position="-85 -31.75 -150.41" rotation="90 0 0" scale="19 4 0.5" width="0.75" height="0.25" color="white"></a-box>
+    <!--ต้นใหญ่-->
+    <a-entity position="0 0 -20">
+      <a-cylinder position="-85 -17.5 -25" radius="2d" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-82 0 -25" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+    </a-entity>
+    <!--ต้นใหญ่-->
+    <a-entity position="0 0 -115">
+      <a-cylinder position="-85 -17.5 -25" radius="2" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-82 0 -25" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+    </a-entity>
+    <!--ต้นเล็ก-->
+    <a-entity position="0 0 3">
+      <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -15 -25" radius="8" color="#55803c"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นเล็ก-->
+    <a-entity position="0 0 -45">
+      <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -15 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นกลาง-->
+    <a-entity position="0 0 -80">
+      <a-cylinder position="-85 -17.5 -25" radius="1.5" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-85 -11 -25" radius="10" color="#3b5026"  roughness=".4"></a-sphere>
+      <a-sphere position="-85 -3 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>  
+  </a-entity>
+
+<!--ต้นไม้หลัง-->
+  <a-entity position="0 -1 0">
+      <a-box position="0 -32 -165" rotation="90 0 0" scale="19 4 0.5" width="9.75" height="4" color="hsl(93, 95%, 25%)"></a-box>
+      <a-box position="0 -31.75 -173" rotation="90 0 0" scale="19 4 0.5" width="9.75" height="0.25" color="white"></a-box>
+      <a-box position="0 -31.75 -157.5" rotation="90 0 0" scale="19 4 0.5" width="9.75" height="0.25" color="white"></a-box>
+      <a-box position="-92.5 -31.75 -165.25" rotation="90 90 0" scale="19 4 0.5" width="0.8725" height="0.25" color="white"></a-box>
+      <a-box position="92.5 -31.75 -165.25" rotation="90 90 0" scale="19 4 0.5" width="0.8725" height="0.25" color="white"></a-box>
+   <!--ต้นใหญ่-->
+    <a-entity position="50 0 -140">
+      <a-cylinder position="-85 -17.5 -25" radius="2d" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-82 0 -25" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+    </a-entity>
+    <!--ต้นใหญ่-->
+    <a-entity position="120 0 -155" rotation="0 10 0">
+      <a-cylinder position="-85 -17.5 -25" radius="2d" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+      <a-sphere position="-82 0 -25" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-sphere>
+      <a-sphere position="-90 0 -22" radius="11" color="hsl(98, 28%, 29%)"  roughness=".4"></a-spher>
+      <a-sphere position="-1 4 -6 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+      <a-sphere position="4 -6 2 " radius="12" color="hsl(98, 28%, 29%)"></a-spher>
+    </a-entity>
+    <!--ต้นเล็ก-->
+    <a-entity position="140 0 -140">
+       <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+       <a-sphere position="-85 -15 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นเล็ก-->
+    <a-entity position="25 0 -140">
+        <a-cylinder position="-85 -25 -25" radius="1" height="20" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+        <a-sphere position="-85 -15 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นกลาง-->
+    <a-entity position="0 0 -140">
+        <a-cylinder position="-85 -17.5 -25" radius="1.5" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+        <a-sphere position="-85 -11 -25" radius="10" color="#3b5026"  roughness=".4"></a-sphere>
+        <a-sphere position="-85 -3 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นกลาง-->
+    <a-entity position="80 0 -140">
+        <a-cylinder position="-85 -17.5 -25" radius="1.5" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+        <a-sphere position="-85 -11 -25" radius="10" color="#3b5026"  roughness=".4"></a-sphere>
+        <a-sphere position="-85 -3 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+    <!--ต้นกลาง-->
+    <a-entity position="170 0 -140">
+        <a-cylinder position="-85 -17.5 -25" radius="1.5" height="30" color="hsl(30, 26%, 24%)" roughness=".4"></a-cylinder>
+        <a-sphere position="-85 -11 -25" radius="10" color="#3b5026"  roughness=".4"></a-sphere>
+        <a-sphere position="-85 -3 -25" radius="8" color="#5d7d3b"  roughness=".4"></a-sphere>
+    </a-entity>
+</a-entity>
+
+ <!--ก้อนเมฆกลาง-->
+  <a-entity position="70 0 0"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 10000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="8"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+  <a-entity position="70 0 0"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 7000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="8"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+<!--ก้อนเมฆขวา-->
+  <a-entity position="90 220 -30" rotation="0 0 180"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 6500; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="8"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+  <!--ก้อนเมฆ-->
+  <a-entity position="-40 270 -30" rotation="0 0 180"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 7000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="7"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+  <a-entity position="-40 270 -30" rotation="0 0 180"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 5000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="7"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+  <!--ก้อนเมฆซ้าย-->
+  <a-entity position="-50 30 0"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 5000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="8"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+  <a-entity position="-50 30 0"
+  animation=" property: rotation; 
+  to: 0 360 0; 
+  dur: 8000; 
+  easing: linear; 
+  loop: true;  ">
+    <a-sphere position="-40 80 -140" radius="8"></a-sphere>
+    <a-sphere position="-35 85 -145" radius="10"></a-sphere>
+    <a-sphere position="-25 82 -143" radius="8"></a-sphere>
+    <a-sphere position="-24 86 -145" radius="9"></a-sphere>
+  </a-entity>
+
+  <a-entity position="0 -5 -5" rotation="0 0 0" >
+      <--base-->
+
+      <a-box position="0 -28  -30" height="1.5" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -25  -30" height="4" width="4"  depth="4"
+      color="hsl(38, 46%, 59%)"></a-box>
+      <a-box position="0 -22.5  -29" height="1" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -20  -29" height="4" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -17.5  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -16  -30" height="3" width="4"  depth="4"
+      color="hsl(38, 46%, 59%)"></a-box>
+      <a-box position="0 -14  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -11  -30" height="5" width="4"  depth="4"
+      color="hsl(38, 46%, 59%)"></a-box>
+      <a-box position="0 -8  -29" height="2" width="4"  depth="4"
+      color="hsl(38, 47%, 41%)"></a-box>
+
+      
+
+
+      
+      <a-ring position="0 -6.5 -27.5" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="0 -6.8 -27.8" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+
+      <a-ring position="0 -3 -32.5" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="0 -3.5 -32.5" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+
+      
+
+      </--base-->
+      
+     
+      <--left-->
+      <a-entity position="-17.6 0 -6"rotation="-0.5 -31 0" >
+      <a-box position="0 -28  -30" height="1.5" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -25  -30" height="4" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -22.5  -29" height="1" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -20  -29" height="4" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -17.5  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -16  -30" height="3" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -14  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -11  -30" height="5" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -8  -29" height="2" width="4"  depth="4"
+      color="hsl(38, 47%, 41%)"></a-box>
+      
+      <a-ring position="0 -6.5 -27.5" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="0 -6.8 -27.8" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+
+      <a-ring position="-2 -3.5 -31" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="-2 -3.8 -30.7" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+    
+      </a-entity>
+      </--left-->
+
+      
+      <--right-->
+        <a-entity position="17.5 0 -6"rotation="-0.5 31 0" >
+      <a-box position="0 -28  -30" height="1.5" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -25  -30" height="4" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -22.5  -29" height="1" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -20  -29" height="4" width="4"  depth="4"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -17.5  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -16  -30" height="3" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -14  -29" height="1" width="4"  depth="4"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="0 -11  -30" height="5" width="4"  depth="4"
+      color="hsl(38, 56%, 67%)"></a-box>
+      <a-box position="0 -8  -29" height="2" width="4"  depth="4"
+      color="hsl(38, 47%, 41%)"></a-box>
+      
+      <a-ring position="0 -6.5 -27.5" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="0 -6.8 -27.8" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+
+      <a-ring position="2 -3.5 -31" color="hsl(57, 51%, 81%)"
+      radius-inner="1.3" radius-outer="2"></a-ring>
+      <a-ring position="2 -3.8 -30.7" color="hsl(57, 51%, 81%)"
+      radius-inner="0.8" radius-outer="1.2"></a-ring>
+
+     
+      
+      </a-entity> 
+      </--right-->
+      
+      <a-box position="0 -21  -31" height="4" width="20"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="0 -19  -31" rotation="-100 0 0" height="2" width="20"  depth="0"
+      color="hsl(121, 34%, 45%)"></a-box>
+      
+      
+      <a-box position="-11 -22  -31" rotation="0 0 30" height="4" width="7"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="11 -22  -31" rotation="0 0 -30" height="4" width="7"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+
+
+      <a-box position="-11 -19.8  -30.8" rotation="0 0 30" height="1" width="4.5"  depth="2"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="11 -19.8  -30.8" rotation="0 0 -30" height="1" width="4.5"  depth="2"
+      color="hsl(121, 34%, 45%)"></a-box>
+      
+      
+      <a-box position="-16 -23.5  -31" rotation="0 0 0" height="4" width="6"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="16 -23.5  -31" rotation="0 0 0" height="4" width="6"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="-15.5 -21  -32" rotation="0 0 0" height="1" width="6"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="15.5 -21  -32" rotation="0 0 0" height="1" width="6"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+      
+      
+      <a-box position="-20 -24.5  -31" rotation="0 0 30" height="4" width="7"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="20 -24.5  -31" rotation="0 0 -30" height="4" width="7"  depth="0"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="-20 -22  -31.5" rotation="0 0 30" height="1" width="4"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="20 -22  -31.5" rotation="0 0 -30" height="1" width="4"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+
+      <a-cone position="-24 -18.5  -31" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="6"
+      radius-bottom="2.5" radius-top="0.2"></a-cone>
+      <a-cone position="24 -18.5  -31" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="6"
+      radius-bottom="2.5" radius-top="0.2"></a-cone>
+
+     
+
+      <a-box position="-24 -26  -31" rotation="0 0 0" height="6" width="6"  depth="3"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="24 -26  -31" rotation="0 0 0" height="6" width="6"  depth="3"
+      color="hsl(57, 51%, 81%)"></a-box>
+      <a-box position="-24 -22.5  -31" rotation="0 0 0" height="1" width="6"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+      <a-box position="24 -22.5  -31" rotation="0 0 0" height="1" width="6"  depth="5"
+      color="hsl(121, 34%, 45%)"></a-box>
+
+      <a-cone position="-16 -17  -31" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="6"
+      radius-bottom="2.5" radius-top="0.2"></a-cone>
+      <a-cone position="16 -17  -31" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="6"
+      radius-bottom="2.5" radius-top="0.2"></a-cone>
+
+      <a-ring position="-6 -27  -30" color="hsl(57, 51%, 81%)"
+      radius-inner="3.5" radius-outer="7" ></a-ring>
+      <a-ring position="6 -27  -30" color="hsl(57, 51%, 81%)"
+      radius-inner="3.5" radius-outer="7" ></a-ring>
+      <a-ring position="-16 -27  -30" color="hsl(57, 51%, 81%)"
+      radius-inner="2.5" radius-outer="5" ></a-ring>
+      <a-ring position="16 -27  -30" color="hsl(57, 51%, 81%)"
+      radius-inner="2.5" radius-outer="5" ></a-ring>
+
+
+      <----->
+
+      
+      <a-cone position="-9.5 -8.5 -35.5" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="10"
+      radius-bottom="3.5" radius-top="0.2"></a-cone>
+
+      <a-cone position="-9.5 -9.5 -35.5" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="10"
+      radius-bottom="3.5" radius-top="0.2"></a-cone>
+      <a-cone position="9.5 -9.5 -35.5" rotation="0 0 0" color="hsl(123, 44%, 32%)" height="10"
+      radius-bottom="3.5" radius-top="0.2"></a-cone>
+      <a-cylinder position="-9.5 -8.5 -35.5" radius="2" height="6" 
+      color="hsl(38, 36%, 58%)"></a-cylinder>
+      <a-cylinder position="9.5 -9.5 -35.5" radius="2.3" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="9.5 -8.5 -35.5" radius="2" height="6" 
+      color="hsl(38, 36%, 58%)"></a-cylinder>
+      <a-cylinder position="-9.5 -9.5 -35.5" radius="2.3" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+
+      <a-sphere position="-9.5 -4 -35.5" radius="2.5" color="hsl(100, 53%, 65%)"></a-sphere>
+      <a-cone position="-9.5 -1 -35.5" rotation="0 0 0" color="hsl(100, 53%, 65%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-box position="-9.5 1 -35.5" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="-9.5 6 -35.5" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="-9.5 1 -35.5" radius="0.8" color="hsl(54, 81%, 74%)"></a-sphere>
+
+      <a-sphere position="9.5 -4 -35.5" radius="2.5" color="hsl(100, 53%, 65%)"></a-sphere>
+      <a-cone position="9.5 -1 -35.5" rotation="0 0 0" color="hsl(100, 53%, 65%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-box position="9.5 1 -35.5" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="9.5 6 -35.5" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="9.5 1 -35.5" radius="0.8" color="hsl(54, 81%, 74%)"></a-sphere>
+
+      <a-box position="0 -24  -35" height="20" width="27"  depth="8"
+      color="hsl(38, 36%, 49%)"></a-box>
+
+      <a-ring position="-9.5 -14 -31.8" color="hsl(57, 51%, 81%)"
+      rotation="-15 0 0" radius-inner="0.8" radius-outer="2"></a-ring>
+      <a-ring position="9.5 -14 -32" color="hsl(57, 51%, 81%)"
+      rotation="-20 0 0" radius-inner="0.8" radius-outer="2"></a-ring>
+      <a-ring position="-12 -13.5 -32.7" color="hsl(57, 51%, 81%)"
+      rotation="-20 -40 0" radius-inner="0.8"radius-outer="1.5"></a-ring>
+      <a-ring position="12 -13.5 -33" color="hsl(57, 51%, 81%)"
+      rotation="-20 40 0" radius-inner="0.8" radius-outer="1.5"></a-ring>
+      <a-ring position="-7 -13.5 -32.7" color="hsl(57, 51%, 81%)"
+      rotation="-20 40 0" radius-inner="0.8" radius-outer="1.5"></a-ring>
+      <a-ring position="7 -13.5 -32.7" color="hsl(57, 51%, 81%)"
+      rotation="-20 -40 0" radius-inner="0.8" radius-outer="1.5"></a-ring>
+
+
+
+      <a-cylinder position="0 -9.5 -39" radius="6" height="25" 
+      color="hsl(38, 36%, 49%)"></a-cylinder>
+      <a-cylinder position="0 3 -39" radius="6.5" height="2" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cone position="9.5 -1 -35.5" rotation="0 0 0" color="hsl(100, 53%, 65%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+
+      <a-cone position="0 10.5 -39" rotation="0 0 0" color="hsl(124, 54%, 39%)" height="4"
+      radius-bottom="4.5" radius-top="0.2"></a-cone>
+      <a-sphere position="0 5.5 -39" radius="5.5" color="hsl(124, 54%, 39%)"></a-sphere>
+      <a-cylinder position="0 5 -39" radius="5.6" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="0 7 -39" radius="5.4" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="0 9 -39" radius="4.3" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-box position="0 13 -39" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="0 18 -39" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="0 13 -39" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+
+
+      <a-cylinder position="0 -6 -39" radius="7" height="4" 
+      color="hsl(123, 44%, 32%)"></a-cylinder>
+
+
+
+<-asd-->
+      <a-box position="-10 -25 -47" height="30" width="15"  depth="10"
+      color="hsl(38, 56%, 67%)" rotation="0 45 0"></a-box>
+      <a-box position="10 -25 -47" height="30" width="15"  depth="10"
+      color="hsl(38, 56%, 67%)" rotation="0 45 0"></a-box>
+      <a-box position="0 -25 -43" height="30" width="20"  depth="10"
+      color="hsl(38, 56%, 67%)"></a-box>
+
+      <a-cylinder position="0 -15 -55" radius="7" height="50" 
+      color="hsl(38, 36%, 49%)"></a-cylinder>
+      <a-cone position="0 18 -55" rotation="0 0 0" color="hsl(38, 36%, 49%)" height="17"
+      radius-bottom="7" radius-top="2.5"></a-cone>
+      <a-cylinder position="0 -15 -65" radius="10" height="20" 
+      color="hsl(38, 36%, 49%)"></a-cylinder>
+
+      <a-cylinder position="0 27.5 -55" radius="2" height="1.5" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="0 29 -55" radius="2" height="1.5" 
+      color="hsl(38, 38%, 63%)"></a-cylinder>
+
+      <a-sphere position="0 31.5 -55" radius="2.5" color="hsl(54, 94%, 66%)"></a-sphere>
+      <a-cone position="0 34 -55" rotation="0 0 0" color="hsl(54, 94%, 66%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-box position="0 37 -55" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="0 42 -55" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="0 36.5 -55" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+
+
+
+      <a-box position="-15 -25 -50" height="30" width="10"  depth="10"
+      color="hsl(38, 38%, 63%)"></a-box>
+      <a-cylinder position="-15 -15 -50" radius="4" height="30" 
+      color="hsl(38, 38%, 63%)"></a-cylinder>
+      <a-cone position="-15 7 -50" rotation="0 0 0" color="hsl(180, 64%, 39%)" height="4"
+      radius-bottom="4" radius-top="0.2"></a-cone>
+      <a-sphere position="-15 2 -50" radius="5" color="hsl(180, 64%, 39%)"></a-sphere>
+      <a-cone position="-15 5 -50" rotation="0 0 0" color="hsl(180, 64%, 39%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-cylinder position="-15 0 -50" radius="4.7" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="-15 2.5 -50" radius="5.2" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="-15 5 -50" radius="4.3" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-box position="-15 9 -50" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="-15 14 -50" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="-15 9 -50" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+
+      <a-box position="-10 -25 -60" height="30" width="10"  depth="10"
+      color="hsl(38, 38%, 63%)"></a-box>
+      <a-cylinder position="-10 -10 -60" radius="4" height="20" 
+      color="hsl(38, 38%, 63%)"></a-cylinder>
+      <a-cone position="-10 2 -60" rotation="0 0 0" color="hsl(57, 51%, 81%)" height="4"
+      radius-bottom="4" radius-top="0.2"></a-cone>
+      <a-sphere position="-10 -3 -60" radius="5" color="hsl(57, 51%, 81%)"></a-sphere>
+      <a-cone position="-10 0 -60" rotation="0 0 0" color="hsl(57, 51%, 81%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-cylinder position="-10 0 -60" radius="4.6" height="1" 
+      color="hsl(8, 80%, 52%)"></a-cylinder>
+      <a-cylinder position="-10 -2.4 -60" radius="5.2" height="1" 
+      color="hsl(8, 80%, 52%)"></a-cylinder>
+      <a-cylinder position="-10 -5 -60" radius="4.8" height="1" 
+      color="hsl(8, 80%, 52%)"></a-cylinder>
+      <a-box position="-10 4 -60" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="-10 9 -60" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="-10 4 -60" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+
+
+      <a-box position="15 -25 -50" height="30" width="10"  depth="10"
+      color="hsl(38, 38%, 63%)"></a-box>
+      <a-cylinder position="15 -15 -50" radius="4" height="30" 
+      color="hsl(38, 38%, 63%)"></a-cylinder>
+      <a-cone position="15 7 -50" rotation="0 0 0" color="hsl(8, 80%, 52%)" height="4"
+      radius-bottom="4" radius-top="0.2"></a-cone>
+      <a-sphere position="15 2 -50" radius="5" color="hsl(8, 80%, 52%)"></a-sphere>
+      <a-cone position="15 5 -50" rotation="0 0 0" color="hsl(57, 51%, 81%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-cylinder position="15 0 -50" radius="4.7" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="15 2.5 -50" radius="5.2" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-cylinder position="15 5 -50" radius="4.3" height="1" 
+      color="hsl(57, 51%, 81%)"></a-cylinder>
+      <a-box position="15 9 -50" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="15 14 -50" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-sphere position="15 9 -50" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+
+      <a-box position="10 -25 -60" height="30" width="10"  depth="10"
+      color="hsl(38, 38%, 63%)"></a-box>
+      <a-cylinder position="10 -15 -60" radius="4" height="20" 
+      color="hsl(38, 38%, 63%)"></a-cylinder>
+      
+      <a-cone position="10 2 -60" rotation="0 0 0" color="hsl(57, 51%, 81%)" height="4"
+      radius-bottom="4" radius-top="0.2"></a-cone>
+      <a-sphere position="10 -3 -60" radius="5" color="hsl(57, 51%, 81%)"></a-sphere>
+      <a-sphere position="10 4 -60" radius="1" color="hsl(54, 81%, 74%)"></a-sphere>
+      <a-cone position="10 0 -60" rotation="0 0 0" color="hsl(57, 51%, 81%)" height="4"
+      radius-bottom="2.4" radius-top="0.2"></a-cone>
+      <a-cylinder position="10 0 -60" radius="4.6" height="1" 
+      color="hsl(180, 64%, 39%)"></a-cylinder>
+      <a-cylinder position="10 -2.4 -60" radius="5.2" height="1" 
+      color="hsl(180, 64%, 39%)"></a-cylinder>
+      <a-cylinder position="10 -5 -60" radius="4.8" height="1" 
+      color="hsl(180, 64%, 39%)"></a-cylinder>
+      <a-box position="10 4 -60" height="15" width="0.3"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+      <a-box position="10 9 -60" height="0.3" width="4"  depth="0"
+      color="hsl(54, 81%, 74%)"></a-box>
+   
+      <a-box position="0 -28.9 -60" height="2" width="100"  depth="100"
+      color="hsl(54, 0%, 74%)"></a-box>
+      <a-box position="0 -28.85 -60" height="2" width="95"  depth="95"
+      color="hsl(54, 0%, 20%)"></a-box>
+
+<-/asd-->
+        </a-entity>
